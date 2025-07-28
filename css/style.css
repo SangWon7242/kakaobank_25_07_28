@@ -1,8 +1,10 @@
-.box {
-  width: 200px;
-  height: 200px;
-  background-color: red;
+@font-face {
+  font-family: "GmarketSansMedium";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
-.box:hover {
-  background-color: blue;
+html > body {
+  font-family: "GmarketSansMedium";
+  text-underline-position: under;
 }

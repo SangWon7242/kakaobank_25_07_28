@@ -1,13 +1,12 @@
-@mixin base-box() {
-  width: 200px;
-  height: 200px;
-  background-color: red;
-
-  &:hover {
-    background-color: blue;
-  }
+@font-face {
+  font-family: "GmarketSansMedium";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
-.box {
-  @include base-box();
+html > body {
+  font-family: "GmarketSansMedium";
+  text-underline-position: under;
 }
