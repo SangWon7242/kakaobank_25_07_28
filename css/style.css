@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "GmarketSansMedium";
   src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff") format("woff");
@@ -8,3 +9,12 @@ html > body {
   font-family: "GmarketSansMedium";
   text-underline-position: under;
 }
+
+/* 커스텀 */
+/* 탑바 구현 시작 */
+.top-bar {
+  height: 80px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* 탑바 구현 끝 */
