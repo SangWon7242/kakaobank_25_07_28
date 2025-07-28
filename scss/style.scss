@@ -28,4 +28,19 @@ $site-width: 1080px;
   height: 80px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
+
+.top-bar__menu {
+  .menu-item {
+    &:hover > .link-text {
+      text-decoration: underline;
+    }
+  }
+
+  .link-text {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    padding-inline: 1.3rem;
+  }
+}
 /* 탑바 구현 끝 */
