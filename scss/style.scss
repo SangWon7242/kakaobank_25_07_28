@@ -11,6 +11,17 @@ html > body {
   text-underline-position: under;
 }
 
+$site-width: 1080px;
+
+/* 라이브러리 */
+.con-min-width {
+  min-width: $site-width;
+}
+
+.con {
+  width: $site-width;
+}
+
 /* 커스텀 */
 /* 탑바 구현 시작 */
 .top-bar {
