@@ -42,6 +42,10 @@ $site-width: 1080px;
     cursor: pointer;
     position: relative;
 
+    &.active::after {
+      transform: translateY(-50%) rotate(-180deg);
+    }
+
     &::after {
       content: "";
       position: absolute;
