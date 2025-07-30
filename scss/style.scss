@@ -142,9 +142,6 @@ $site-width: 1080px;
   }
 
   .depth2-menu {
-    .depth2-item {
-    }
-
     .depth2-link-text {
       @include link-text;
       margin-bottom: 10px;
@@ -157,6 +154,29 @@ $site-width: 1080px;
       @include link-text;
       padding-block: 10px;
       color: #444;
+    }
+  }
+
+  @mixin anchor-icon($size) {
+    content: "";
+    display: inline-block;
+    width: $size;
+    height: $size;
+    background: url(/assets/images/svg_line_outlink.svg);
+    background-size: $size $size;
+    margin-left: 4px;
+    transform: translateY(3px);
+  }
+
+  .anchor {
+    &::after {
+      @include anchor-icon(14px);
+    }
+  }
+
+  .anchor-middle {
+    &::after {
+      @include anchor-icon(18px);
     }
   }
 }

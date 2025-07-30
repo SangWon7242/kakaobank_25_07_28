@@ -120,6 +120,26 @@ html > body {
   padding-block: 10px;
   color: #444;
 }
+.mega-menu-wrap .anchor::after {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background: url(/assets/images/svg_line_outlink.svg);
+  background-size: 14px 14px;
+  margin-left: 4px;
+  transform: translateY(3px);
+}
+.mega-menu-wrap .anchor-middle::after {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background: url(/assets/images/svg_line_outlink.svg);
+  background-size: 18px 18px;
+  margin-left: 4px;
+  transform: translateY(3px);
+}
 
 .menu-dropdown__list {
   position: absolute;
