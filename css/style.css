@@ -25,7 +25,10 @@ html > body {
   height: 80px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
-.top-bar .related-btn {
+.top-bar .related-btn-wrap {
+  position: relative;
+}
+.top-bar .related-btn-wrap .related-btn {
   background-color: rgba(244, 244, 244, 0.8);
   color: rgb(68, 68, 68);
   display: flex;
@@ -39,10 +42,10 @@ html > body {
   cursor: pointer;
   position: relative;
 }
-.top-bar .related-btn.active::after {
+.top-bar .related-btn-wrap .related-btn.active::after {
   transform: translateY(-50%) rotate(-180deg);
 }
-.top-bar .related-btn::after {
+.top-bar .related-btn-wrap .related-btn::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -66,6 +69,46 @@ html > body {
   height: 100%;
   align-items: center;
   padding-inline: 1.3rem;
+}
+
+.menu-dropdown__list {
+  position: absolute;
+  border-radius: 6px;
+  font-size: 16px;
+  top: 100%;
+  padding-top: 10px;
+  width: 240px;
+  text-align: left;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.menu-dropdown__list ul {
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+  transition: all 0.1s linear;
+}
+.menu-dropdown__list ul li:hover a {
+  text-decoration: underline;
+}
+.menu-dropdown__list ul a {
+  display: flex;
+  align-items: center;
+  padding: 15px 24px;
+  font-size: 13px;
+}
+.menu-dropdown__list ul a::after {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: url(/assets/images/svg_line_outlink.svg);
+  background-repeat: no-repeat;
+  background-position: cover;
+  background-size: 12px 12px;
+  margin-top: -2px;
+  margin-left: 4px;
 }
 
 /* 탑바 구현 끝 */
