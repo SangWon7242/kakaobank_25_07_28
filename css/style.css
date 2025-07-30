@@ -27,6 +27,15 @@ html > body {
 }
 .top-bar .related-btn-wrap {
   position: relative;
+  display: flex;
+  align-items: center;
+}
+.top-bar .related-btn-wrap.active .related-btn::after {
+  transform: translateY(-50%) rotate(-180deg);
+}
+.top-bar .related-btn-wrap.active .menu-dropdown__list ul {
+  transform: translateY(0);
+  opacity: 1;
 }
 .top-bar .related-btn-wrap .related-btn {
   background-color: rgba(244, 244, 244, 0.8);
@@ -41,9 +50,6 @@ html > body {
   border-radius: 40px;
   cursor: pointer;
   position: relative;
-}
-.top-bar .related-btn-wrap .related-btn.active::after {
-  transform: translateY(-50%) rotate(-180deg);
 }
 .top-bar .related-btn-wrap .related-btn::after {
   content: "";
@@ -88,6 +94,8 @@ html > body {
   box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.12);
   overflow: hidden;
   transition: all 0.1s linear;
+  transform: translateY(20px);
+  opacity: 0;
 }
 .menu-dropdown__list ul li:hover a {
   text-decoration: underline;

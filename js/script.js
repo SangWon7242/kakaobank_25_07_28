@@ -1,6 +1,6 @@
 console.clear();
 
 // $('') : 검색
-$(".related-btn").click(function () {
+$(".related-btn-wrap").click(function () {
   $(this).toggleClass("active");
 });

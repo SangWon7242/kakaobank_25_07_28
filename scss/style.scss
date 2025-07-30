@@ -29,6 +29,21 @@ $site-width: 1080px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   .related-btn-wrap {
     position: relative;
+    display: flex;
+    align-items: center;
+
+    &.active {
+      .related-btn::after {
+        transform: translateY(-50%) rotate(-180deg);
+      }
+
+      .menu-dropdown__list {
+        ul {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+    }
 
     .related-btn {
       background-color: rgba(244, 244, 244, 0.8);
@@ -43,10 +58,6 @@ $site-width: 1080px;
       border-radius: 40px;
       cursor: pointer;
       position: relative;
-
-      &.active::after {
-        transform: translateY(-50%) rotate(-180deg);
-      }
 
       &::after {
         content: "";
@@ -99,8 +110,8 @@ $site-width: 1080px;
     box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.12);
     overflow: hidden;
     transition: all 0.1s linear;
-    // opacity: 0;
-    // transform: translateY(4px);
+    transform: translateY(20px);
+    opacity: 0;
 
     li:hover {
       a {
