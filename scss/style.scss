@@ -105,12 +105,14 @@ $site-width: 1080px;
 }
 
 .top-bar__menu {
+  li:hover {
+    > a[class*="link-text"] {
+      text-decoration: underline;
+    }
+  }
+
   .menu-item {
     &:hover {
-      .link-text {
-        text-decoration: underline;
-      }
-
       .mega-menu-wrap {
         display: block;
       }
@@ -154,6 +156,7 @@ $site-width: 1080px;
       font-size: 13px;
       @include link-text;
       padding-block: 10px;
+      color: #444;
     }
   }
 }

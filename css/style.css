@@ -86,7 +86,7 @@ html > body {
   background-size: 20px 20px;
 }
 
-.top-bar__menu .menu-item:hover .link-text {
+.top-bar__menu li:hover > a[class*=link-text] {
   text-decoration: underline;
 }
 .top-bar__menu .menu-item:hover .mega-menu-wrap {
@@ -118,6 +118,7 @@ html > body {
   display: block;
   text-align: center;
   padding-block: 10px;
+  color: #444;
 }
 
 .menu-dropdown__list {
