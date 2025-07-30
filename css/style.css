@@ -216,5 +216,19 @@ html > body {
 #main-banner .banner-intro .des-2 {
   opacity: 0.7;
 }
+#main-banner .banner-intro .list-store a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 178px;
+  height: 56px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
+  font-size: 16.2px;
+  font-weight: bold;
+  color: #333;
+  background: #fff;
+  text-align: center;
+}
 
 /* main-banner 구현 끝 */
