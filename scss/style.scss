@@ -27,6 +27,7 @@ $site-width: 1080px;
 .top-bar {
   height: 80px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
   .related-btn-wrap {
     position: relative;
     display: flex;
@@ -74,6 +75,31 @@ $site-width: 1080px;
         background-size: 12px 12px;
         transition: all 0.3s;
       }
+    }
+  }
+
+  .global-icon-wrap {
+    margin-left: 30px;
+
+    .global-link {
+      display: flex;
+      align-items: center;
+      height: 100%;
+
+      &:hover {
+        .global-icon {
+          opacity: 0.3;
+        }
+      }
+    }
+
+    .global-icon {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      background-image: url(/assets/images/icon_eng.svg);
+      background-position: center;
+      background-size: 20px 20px;
     }
   }
 }
