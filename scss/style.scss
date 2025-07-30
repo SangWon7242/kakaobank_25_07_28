@@ -106,8 +106,14 @@ $site-width: 1080px;
 
 .top-bar__menu {
   .menu-item {
-    &:hover > .link-text {
-      text-decoration: underline;
+    &:hover {
+      .link-text {
+        text-decoration: underline;
+      }
+
+      .mega-menu-wrap {
+        display: block;
+      }
     }
   }
 
@@ -117,6 +123,16 @@ $site-width: 1080px;
     align-items: center;
     padding-inline: 1.3rem;
   }
+}
+
+.mega-menu-wrap {
+  display: none;
+  position: absolute;
+  left: 0;
+  transform: translateY(1px);
+  width: 100%;
+  padding: 60px 0 36px;
+  background-color: #fff;
 }
 
 .menu-dropdown__list {

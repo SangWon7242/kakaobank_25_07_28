@@ -86,14 +86,27 @@ html > body {
   background-size: 20px 20px;
 }
 
-.top-bar__menu .menu-item:hover > .link-text {
+.top-bar__menu .menu-item:hover .link-text {
   text-decoration: underline;
+}
+.top-bar__menu .menu-item:hover .mega-menu-wrap {
+  display: block;
 }
 .top-bar__menu .link-text {
   display: flex;
   height: 100%;
   align-items: center;
   padding-inline: 1.3rem;
+}
+
+.mega-menu-wrap {
+  display: none;
+  position: absolute;
+  left: 0;
+  transform: translateY(1px);
+  width: 100%;
+  padding: 60px 0 36px;
+  background-color: #fff;
 }
 
 .menu-dropdown__list {
