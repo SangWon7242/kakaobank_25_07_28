@@ -25,6 +25,35 @@ html > body {
   height: 80px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
+.top-bar .related-btn {
+  background-color: rgba(244, 244, 244, 0.8);
+  color: rgb(68, 68, 68);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 30px 10px 20px;
+  height: 40px;
+  font-size: 15px;
+  border: 1px solid rgba(34, 34, 34, 0.1);
+  border-radius: 40px;
+  cursor: pointer;
+  position: relative;
+}
+.top-bar .related-btn::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) rotate(0);
+  right: 10%;
+  background-image: url(/assets/images/svg_line_arrow_down.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-size: 12px 12px;
+  transition: all 0.3s;
+}
 
 .top-bar__menu .menu-item:hover > .link-text {
   text-decoration: underline;
