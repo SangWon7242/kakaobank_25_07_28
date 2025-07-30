@@ -203,5 +203,18 @@ html > body {
   background-repeat: no-repeat;
   z-index: 1;
 }
+#main-banner .banner-intro {
+  position: absolute;
+  top: 135px;
+  left: 90px;
+}
+#main-banner .banner-intro .intro-title {
+  font-weight: bold;
+  font-size: 49px;
+}
+#main-banner .banner-intro .des-1,
+#main-banner .banner-intro .des-2 {
+  opacity: 0.7;
+}
 
 /* main-banner 구현 끝 */

@@ -249,5 +249,25 @@ $site-width: 1080px;
     background-repeat: no-repeat;
     z-index: 1;
   }
+
+  .banner-intro {
+    position: absolute;
+    top: 135px;
+    left: 90px;
+
+    .intro-title {
+      font-weight: bold;
+      font-size: 49px;
+    }
+
+    @mixin des {
+      opacity: 0.7;
+    }
+
+    .des-1,
+    .des-2 {
+      @include des;
+    }
+  }
 }
 /* main-banner 구현 끝 */
