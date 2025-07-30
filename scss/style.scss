@@ -133,6 +133,29 @@ $site-width: 1080px;
   width: 100%;
   padding: 60px 0 36px;
   background-color: #fff;
+
+  @mixin link-text {
+    display: block;
+    text-align: center;
+  }
+
+  .depth2-menu {
+    .depth2-item {
+    }
+
+    .depth2-link-text {
+      @include link-text;
+      margin-bottom: 10px;
+    }
+  }
+
+  .depth3-menu {
+    .depth3-link-text {
+      font-size: 13px;
+      @include link-text;
+      padding-block: 10px;
+    }
+  }
 }
 
 .menu-dropdown__list {
