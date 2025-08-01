@@ -258,7 +258,6 @@ html > body {
 /* 섹션 1 ~ 5 구현 시작 */
 .section {
   height: 750px;
-  position: relative;
   background-color: #fff;
   color: #111;
 }
@@ -267,7 +266,18 @@ html > body {
   margin-inline: auto;
   border: 2px solid red;
   height: 100%;
-  position: relative;
+  display: flex;
+}
+.section .section-left {
+  background-color: red;
+  width: 55%;
+}
+.section .section-right {
+  background-color: blue;
+  width: 45%;
+}
+.section-1 {
+  padding-top: 148px;
 }
 
 .section-divider {

@@ -318,7 +318,7 @@ $site-width: 1080px;
 /* 섹션 1 ~ 5 구현 시작 */
 @mixin section-style() {
   height: 750px;
-  position: relative;
+  // position: relative;
   background-color: #fff;
   color: #111;
 
@@ -327,12 +327,28 @@ $site-width: 1080px;
     margin-inline: auto;
     border: 2px solid red;
     height: 100%;
-    position: relative;
+    // position: relative;
+    display: flex;
+  }
+
+  .section-left {
+    background-color: red;
+    width: 55%;
+  }
+
+  .section-right {
+    background-color: blue;
+    width: 45%;
   }
 }
 
 .section {
   @include section-style();
+
+  // 섹션1
+  &-1 {
+    padding-top: 148px;
+  }
 }
 
 .section-divider {
