@@ -275,8 +275,11 @@ html > body {
   position: relative;
   border: 5px solid red;
 }
-.section .section-left .img-box {
+.section .img-box {
   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .section .section-right {
   width: 45%;
@@ -284,22 +287,25 @@ html > body {
   position: relative;
   border: 5px solid blue;
 }
-.section .section-right .text-box {
+.section .text-box {
   position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
   display: flex;
   flex-direction: column;
   gap: 25px 0;
+  width: 100%;
 }
-.section .section-right .text-box .title {
+.section .text-box .title {
   font-size: 40px;
   font-weight: bold;
 }
-.section .section-right .text-box .des {
+.section .text-box .des {
   font-size: 15px;
   font-weight: 400;
   color: #666;
 }
-.section .section-right .text-box .cont-btn a {
+.section .text-box .cont-btn a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -310,15 +316,15 @@ html > body {
   color: #333;
   border-radius: 10px;
 }
-.section .section-right .text-box .cont-btn a:hover span {
+.section .text-box .cont-btn a:hover span {
   text-decoration: underline;
 }
-.section .section-right .text-box .cont-btn span {
+.section .text-box .cont-btn span {
   display: flex;
   align-items: center;
   gap: 0 7px;
 }
-.section .section-right .text-box .cont-btn span::after {
+.section .text-box .cont-btn span::after {
   content: "";
   display: inline-block;
   background-image: url(/assets/images/home_arr.png);
@@ -340,19 +346,36 @@ html > body {
   margin-top: 148px;
 }
 .section-1 .section-left .img-box {
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   width: 473px;
 }
 .section-1 .section-left .img-box img {
   width: 100%;
 }
 .section-1 .section-right .text-box {
-  width: 100%;
-  top: 50%;
-  transform: translateY(-50%);
   margin-left: 60px;
+}
+
+.section-2 .section-left .text-box {
+  margin-left: 50px;
+}
+.section-2 .section-left .cont-btn a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f6f6f6;
+  width: 158px;
+  height: 56px;
+  font-size: 16px;
+  color: #333;
+  border-radius: 10px;
+}
+.section-2 .section-left .cont-img img {
+  width: 440px;
+}
+.section-2 .section-right img {
+  width: 409px;
+  height: 722px;
+  max-width: none;
 }
 
 /* 섹션 1 ~ 5 구현 끝 */
