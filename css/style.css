@@ -269,23 +269,16 @@ html > body {
   height: 100%;
   display: flex;
 }
-.section .section-left {
-  width: 55%;
+.section .section-inner > div {
+  flex-grow: 1;
   height: 100%;
   position: relative;
-  border: 5px solid red;
 }
 .section .img-box {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-.section .section-right {
-  width: 45%;
-  height: 100%;
-  position: relative;
-  border: 5px solid blue;
 }
 .section .text-box {
   position: absolute;
@@ -348,9 +341,6 @@ html > body {
 .section-1 .section-left .img-box {
   width: 473px;
 }
-.section-1 .section-left .img-box img {
-  width: 100%;
-}
 .section-1 .section-right .text-box {
   margin-left: 60px;
 }
@@ -372,10 +362,36 @@ html > body {
 .section-2 .section-left .cont-img img {
   width: 440px;
 }
-.section-2 .section-right img {
+.section-2 .section-right .img-box {
   width: 409px;
   height: 722px;
-  max-width: none;
+}
+
+.section-3 .section-left .img-box {
+  width: 459px;
+  height: 607px;
+}
+.section-3 .section-right .text-box {
+  margin-left: 80px;
+}
+
+.section-4 .section-left .text-box {
+  margin-left: 80px;
+}
+.section-4 .section-right .img-box {
+  width: 492px;
+  height: 408px;
+}
+
+.section-5 {
+  background: url(/assets/images/home_map.png) no-repeat -12% 50%;
+}
+.section-5 .section-left .img-box {
+  width: 408px;
+  height: 715px;
+}
+.section-5 .section-right .text-box {
+  margin-left: 110px;
 }
 
 /* 섹션 1 ~ 5 구현 끝 */

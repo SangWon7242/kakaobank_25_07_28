@@ -340,13 +340,16 @@ $site-width: 1080px;
     margin-inline: auto;
     height: 100%;
     display: flex;
+
+    > div {
+      flex-grow: 1;
+      height: 100%;
+      position: relative;
+    }
   }
 
   .section-left {
-    width: 55%;
-    height: 100%;
-    position: relative;
-    border: 5px solid red;
+    // border: 5px solid red;
   }
 
   .img-box {
@@ -357,10 +360,7 @@ $site-width: 1080px;
   }
 
   .section-right {
-    width: 45%;
-    height: 100%;
-    position: relative;
-    border: 5px solid blue;
+    // border: 5px solid blue;
   }
 
   .text-box {
@@ -432,10 +432,6 @@ $site-width: 1080px;
   .section-left {
     .img-box {
       width: 473px;
-
-      img {
-        width: 100%;
-      }
     }
   }
 
@@ -466,10 +462,56 @@ $site-width: 1080px;
   }
 
   .section-right {
-    img {
+    .img-box {
       width: 409px;
       height: 722px;
-      max-width: none;
+    }
+  }
+}
+
+.section-3 {
+  .section-left {
+    .img-box {
+      width: 459px;
+      height: 607px;
+    }
+  }
+
+  .section-right {
+    .text-box {
+      margin-left: 80px;
+    }
+  }
+}
+
+.section-4 {
+  .section-left {
+    .text-box {
+      margin-left: 80px;
+    }
+  }
+
+  .section-right {
+    .img-box {
+      width: 492px;
+      height: 408px;
+    }
+  }
+}
+
+.section-5 {
+  background: url(/assets/images/home_map.png) no-repeat -12% 50%;
+
+  .section-left {
+    .img-box {
+      width: 408px;
+      height: 715px;
+    }
+  }
+
+  .section-right {
+    .text-box {
+      margin-left: 110px;
     }
   }
 }
