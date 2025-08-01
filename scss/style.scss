@@ -321,6 +321,14 @@ $site-width: 1080px;
   position: relative;
   background-color: #fff;
   color: #111;
+
+  .section-inner {
+    max-width: 1200px;
+    margin-inline: auto;
+    border: 2px solid red;
+    height: 100%;
+    position: relative;
+  }
 }
 
 .section {
