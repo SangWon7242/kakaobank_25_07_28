@@ -315,6 +315,18 @@ $site-width: 1080px;
 }
 /* main-banner 구현 끝 */
 
+@mixin section-cont-btn($width: 258px, $height: 56px) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f6f6f6;
+  width: $width;
+  height: $height;
+  font-size: 16px;
+  color: #333;
+  border-radius: 10px;
+}
+
 /* 섹션 1 ~ 5 구현 시작 */
 @mixin section-style() {
   height: 750px;
@@ -347,6 +359,26 @@ $site-width: 1080px;
 
     .text-box {
       position: absolute;
+      display: flex;
+      flex-direction: column;
+      gap: 25px 0;
+
+      .title {
+        font-size: 40px;
+        font-weight: bold;
+      }
+
+      .des {
+        font-size: 15px;
+        font-weight: 400;
+        color: #666;
+      }
+
+      .cont-btn {
+        a {
+          @include section-cont-btn();
+        }
+      }
     }
   }
 }
@@ -379,6 +411,12 @@ $site-width: 1080px;
   }
 
   .section-right {
+    .text-box {
+      width: 100%;
+      top: 50%;
+      transform: translateY(-50%);
+      margin-left: 60px;
+    }
   }
 }
 
