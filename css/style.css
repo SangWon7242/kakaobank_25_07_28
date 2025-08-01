@@ -230,5 +230,28 @@ html > body {
   background: #fff;
   text-align: center;
 }
+#main-banner .banner-intro .list-store a span {
+  display: flex;
+}
+#main-banner .banner-intro .list-store a span::before {
+  content: "";
+  display: inline-block;
+  background-image: url(/assets/images/img_kabang_220615.png);
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  margin: -2px 10px 0 0;
+  background-position: -341px -292px;
+}
+#main-banner .banner-intro .list-store li:last-child span::before {
+  content: "";
+  display: inline-block;
+  background-image: url(/assets/images/img_kabang_220615.png);
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  margin: -2px 10px 0 0;
+  background-position: -371px -292px;
+}
 
 /* main-banner 구현 끝 */
