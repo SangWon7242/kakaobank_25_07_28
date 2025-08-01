@@ -255,3 +255,18 @@ html > body {
 }
 
 /* main-banner 구현 끝 */
+/* 섹션 1 ~ 5 구현 시작 */
+.section {
+  height: 750px;
+  position: relative;
+  background-color: #fff;
+  color: #111;
+}
+
+.section-divider {
+  width: 100%;
+  height: 32px;
+  background-color: #fafafa;
+}
+
+/* 섹션 1 ~ 5 구현 끝 */
