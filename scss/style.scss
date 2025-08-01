@@ -47,6 +47,7 @@ $site-width: 1080px;
         ul {
           transform: translateY(0);
           opacity: 1;
+          visibility: visible;
         }
       }
     }
@@ -205,6 +206,7 @@ $site-width: 1080px;
     transition: all 0.1s linear;
     transform: translateY(20px);
     opacity: 0;
+    visibility: hidden;
 
     li:hover {
       a {
@@ -377,6 +379,30 @@ $site-width: 1080px;
       .cont-btn {
         a {
           @include section-cont-btn();
+
+          &:hover {
+            span {
+              text-decoration: underline;
+            }
+          }
+        }
+
+        span {
+          display: flex;
+          align-items: center;
+          gap: 0 7px;
+
+          &::after {
+            content: "";
+            display: inline-block;
+            background-image: url(/assets/images/home_arr.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            width: 10px;
+            height: 10px;
+            transform: translateY(-1px);
+          }
         }
       }
     }

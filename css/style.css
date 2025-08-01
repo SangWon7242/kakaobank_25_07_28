@@ -41,6 +41,7 @@ html > body {
 .top-bar .related-btn-wrap.active .menu-dropdown__list ul {
   transform: translateY(0);
   opacity: 1;
+  visibility: visible;
 }
 .top-bar .related-btn-wrap .related-btn {
   background-color: rgba(244, 244, 244, 0.8);
@@ -165,6 +166,7 @@ html > body {
   transition: all 0.1s linear;
   transform: translateY(20px);
   opacity: 0;
+  visibility: hidden;
 }
 .menu-dropdown__list ul li:hover a {
   text-decoration: underline;
@@ -307,6 +309,25 @@ html > body {
   font-size: 16px;
   color: #333;
   border-radius: 10px;
+}
+.section .section-right .text-box .cont-btn a:hover span {
+  text-decoration: underline;
+}
+.section .section-right .text-box .cont-btn span {
+  display: flex;
+  align-items: center;
+  gap: 0 7px;
+}
+.section .section-right .text-box .cont-btn span::after {
+  content: "";
+  display: inline-block;
+  background-image: url(/assets/images/home_arr.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 10px;
+  height: 10px;
+  transform: translateY(-1px);
 }
 
 .section-divider {
