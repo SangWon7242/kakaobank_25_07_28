@@ -264,20 +264,26 @@ html > body {
 .section .section-inner {
   max-width: 1200px;
   margin-inline: auto;
-  border: 2px solid red;
   height: 100%;
   display: flex;
 }
 .section .section-left {
-  background-color: red;
   width: 55%;
+  height: 100%;
+  position: relative;
+  border: 5px solid red;
+}
+.section .section-left .img-box {
+  position: absolute;
 }
 .section .section-right {
-  background-color: blue;
   width: 45%;
+  height: 100%;
+  position: relative;
+  border: 5px solid blue;
 }
-.section-1 {
-  padding-top: 148px;
+.section .section-right .text-box {
+  position: absolute;
 }
 
 .section-divider {
@@ -286,4 +292,16 @@ html > body {
   background-color: #fafafa;
 }
 
+.section-1 {
+  margin-top: 148px;
+}
+.section-1 .section-left .img-box {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 473px;
+}
+.section-1 .section-left .img-box img {
+  width: 100%;
+}
 /* 섹션 1 ~ 5 구현 끝 */
