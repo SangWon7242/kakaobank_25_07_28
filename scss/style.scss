@@ -551,15 +551,28 @@ $site-width: 1080px;
 /* 대출 박스 구현 시작 */
 .loan-box {
   position: relative;
+  color: white;
 
   .sky {
     position: absolute;
     inset: 0;
     background-color: #333b58;
 
-    &:hover {
+    &.active {
       .blue {
         height: 0 !important;
+      }
+
+      .moon {
+        .base {
+          background-color: #fff;
+        }
+
+        .shadow {
+          top: -23px;
+          left: -23px;
+          opacity: 1;
+        }
       }
     }
 
@@ -570,11 +583,110 @@ $site-width: 1080px;
       background-color: #559cde;
       transition: height 0.85s;
     }
+
+    .moon {
+      position: absolute;
+      top: 200px;
+      left: calc(50% + 338px);
+      width: 112px;
+      height: 112px;
+      overflow: hidden;
+
+      .base {
+        position: absolute;
+        width: 110px;
+        height: 110px;
+        border-radius: 50%;
+        background-color: #ffdc00;
+        transition: background-color 0.5s 0.5s;
+      }
+
+      .shadow {
+        position: absolute;
+        top: -110%;
+        left: -84%;
+        width: 100%;
+        height: 100%;
+        border-radius: 55px;
+        background-color: #333b58;
+        transition: top 0.85s 0.5s, left 0.85s 0.5s;
+      }
+    }
+
+    .stars {
+      .icon-star {
+        position: absolute;
+        display: block;
+        width: 4px;
+        height: 4px;
+        border-radius: 5px;
+        background-color: #fff;
+
+        &-1 {
+          top: 30%;
+          left: 10%;
+          animation: clittering 2s infinite;
+        }
+
+        &-2 {
+          top: 10%;
+          left: 20%;
+          animation: clittering 3s infinite;
+        }
+
+        &-3 {
+          top: 25%;
+          left: 15%;
+          animation: clittering 5s infinite;
+        }
+
+        &-4 {
+          top: 40%;
+          right: 15%;
+          animation: clittering 2s infinite;
+        }
+
+        &-5 {
+          top: 43%;
+          right: 30%;
+          animation: clittering 4s infinite;
+        }
+
+        &-6 {
+          top: 73%;
+          right: 27%;
+          animation: clittering 1.8s infinite;
+        }
+
+        &-7 {
+          top: 65%;
+          left: 22%;
+          animation: clittering 3.5s infinite;
+        }
+      }
+    }
   }
 
   .con {
     position: relative;
     z-index: 1;
+  }
+}
+
+@keyframes clittering {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(0.9);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(0.5);
   }
 }
 
