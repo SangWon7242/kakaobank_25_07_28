@@ -1,8 +1,14 @@
 console.clear();
 
 // $('') : 검색
-$(".related-btn-wrap").click(function () {
-  $(this).toggleClass("active");
+$(".related-btn").click(function () {
+  let has = $(".related-btn-wrap").hasClass("active"); // 참 or 거짓
+
+  if (has) {
+    $(".related-btn-wrap").removeClass("active");
+  } else {
+    $(".related-btn-wrap").addClass("active");
+  }
 });
 
 /* 발견되면 활성화시키는 라이브러리 시작 */
