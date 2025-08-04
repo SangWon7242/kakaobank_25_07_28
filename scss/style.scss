@@ -9,6 +9,7 @@
 html > body {
   font-family: "GmarketSansMedium";
   text-underline-position: under;
+  padding-bottom: 1000px; /* 임시 */
 }
 
 $site-width: 1080px;
@@ -442,7 +443,10 @@ $site-width: 1080px;
   }
 }
 
+// 섹션2
 .section-2 {
+  overflow: hidden;
+
   .section-left {
     .text-box {
       margin-left: 50px;
@@ -462,6 +466,15 @@ $site-width: 1080px;
   }
 
   .section-right {
+    transform: translateX(100%);
+    opacity: 0;
+    transition: transform 1.4s, opacity 1.4s;
+
+    &.active {
+      transform: translateX(0);
+      opacity: 1;
+    }
+
     .img-box {
       width: 409px;
       height: 722px;
@@ -469,6 +482,7 @@ $site-width: 1080px;
   }
 }
 
+// 섹션3
 .section-3 {
   .section-left {
     .img-box {
@@ -484,6 +498,7 @@ $site-width: 1080px;
   }
 }
 
+// 섹션4
 .section-4 {
   .section-left {
     .text-box {
@@ -499,10 +514,20 @@ $site-width: 1080px;
   }
 }
 
+// 섹션5
 .section-5 {
   background: url(/assets/images/home_map.png) no-repeat -12% 50%;
 
   .section-left {
+    transform: translateY(100%);
+    opacity: 0;
+    transition: transform 1.4s, opacity 1.4s;
+
+    &.active {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
     .img-box {
       width: 408px;
       height: 715px;

@@ -8,6 +8,7 @@
 html > body {
   font-family: "GmarketSansMedium";
   text-underline-position: under;
+  padding-bottom: 1000px; /* 임시 */
 }
 
 :root {
@@ -345,6 +346,9 @@ html > body {
   margin-left: 60px;
 }
 
+.section-2 {
+  overflow: hidden;
+}
 .section-2 .section-left .text-box {
   margin-left: 50px;
 }
@@ -361,6 +365,15 @@ html > body {
 }
 .section-2 .section-left .cont-img img {
   width: 440px;
+}
+.section-2 .section-right {
+  transform: translateX(100%);
+  opacity: 0;
+  transition: transform 1.4s, opacity 1.4s;
+}
+.section-2 .section-right.active {
+  transform: translateX(0);
+  opacity: 1;
 }
 .section-2 .section-right .img-box {
   width: 409px;
@@ -385,6 +398,15 @@ html > body {
 
 .section-5 {
   background: url(/assets/images/home_map.png) no-repeat -12% 50%;
+}
+.section-5 .section-left {
+  transform: translateY(100%);
+  opacity: 0;
+  transition: transform 1.4s, opacity 1.4s;
+}
+.section-5 .section-left.active {
+  transform: translateY(0);
+  opacity: 1;
 }
 .section-5 .section-left .img-box {
   width: 408px;
