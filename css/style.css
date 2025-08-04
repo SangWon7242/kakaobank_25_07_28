@@ -367,9 +367,9 @@ html > body {
   width: 440px;
 }
 .section-2 .section-right {
-  transform: translateX(100%);
+  transform: translateX(50%);
   opacity: 0;
-  transition: transform 1.4s, opacity 1.4s;
+  transition: transform 1.4s cubic-bezier(0.6, 0.2, 0.1, 1) 0.5s, opacity 1.4s cubic-bezier(0.6, 0.2, 0.1, 1) 0.5s;
 }
 .section-2 .section-right.active {
   transform: translateX(0);
@@ -400,9 +400,9 @@ html > body {
   background: url(/assets/images/home_map.png) no-repeat -12% 50%;
 }
 .section-5 .section-left {
-  transform: translateY(100%);
+  transform: translateY(50%);
   opacity: 0;
-  transition: transform 1.4s, opacity 1.4s;
+  transition: transform 1.4s cubic-bezier(0.6, 0.2, 0.1, 1) 0.5s, opacity 1.4s cubic-bezier(0.6, 0.2, 0.1, 1) 0.5s;
 }
 .section-5 .section-left.active {
   transform: translateY(0);
