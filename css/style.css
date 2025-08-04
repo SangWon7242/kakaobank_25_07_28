@@ -5,6 +5,10 @@
   font-weight: normal;
   font-style: normal;
 }
+html {
+  overflow-x: hidden;
+}
+
 html > body {
   font-family: "GmarketSansMedium";
   text-underline-position: under;
@@ -417,3 +421,26 @@ html > body {
 }
 
 /* 섹션 1 ~ 5 구현 끝 */
+/* 대출 박스 구현 시작 */
+.loan-box {
+  position: relative;
+}
+.loan-box .sky, .loan-box .sky .blue {
+  position: absolute;
+  inset: 0;
+  background-color: #333b58;
+}
+.loan-box .sky:hover .blue, .loan-box .sky .blue:hover .blue {
+  height: 0 !important;
+}
+.loan-box .sky .blue {
+  height: 100%;
+  background-color: #559cde;
+  transition: height 0.85s;
+}
+.loan-box .con {
+  position: relative;
+  z-index: 1;
+}
+
+/* 대출 박스 구현 끝 */
