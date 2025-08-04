@@ -13,7 +13,6 @@ html {
 html > body {
   font-family: "GmarketSansMedium";
   text-underline-position: under;
-  padding-bottom: 1000px; /* 임시 */
 }
 
 $site-width: 1080px;
@@ -334,6 +333,24 @@ $site-width: 1080px;
   border-radius: 10px;
 }
 
+@mixin btn-icon-style() {
+  display: flex;
+  align-items: center;
+  gap: 0 7px;
+
+  &::after {
+    content: "";
+    display: inline-block;
+    background-image: url(/assets/images/home_arr.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 10px;
+    height: 10px;
+    transform: translateY(-1px);
+  }
+}
+
 /* 섹션 1 ~ 5 구현 시작 */
 @mixin section-style() {
   height: 750px;
@@ -400,21 +417,7 @@ $site-width: 1080px;
       }
 
       span {
-        display: flex;
-        align-items: center;
-        gap: 0 7px;
-
-        &::after {
-          content: "";
-          display: inline-block;
-          background-image: url(/assets/images/home_arr.png);
-          background-repeat: no-repeat;
-          background-position: center;
-          background-size: contain;
-          width: 10px;
-          height: 10px;
-          transform: translateY(-1px);
-        }
+        @include btn-icon-style();
       }
     }
   }
@@ -586,8 +589,8 @@ $site-width: 1080px;
 
     .moon {
       position: absolute;
-      top: 200px;
-      left: calc(50% + 338px);
+      top: 155px;
+      left: calc(50% + 460px);
       width: 112px;
       height: 112px;
       overflow: hidden;
@@ -669,7 +672,42 @@ $site-width: 1080px;
 
   .con {
     position: relative;
+    height: 100%;
     z-index: 1;
+  }
+
+  .loan-box-btns {
+    a {
+      @include section-cont-btn(166px);
+      background-color: rgba(255, 255, 255, 0.09);
+      color: #fff;
+
+      &:hover {
+        span {
+          text-decoration: underline;
+        }
+      }
+
+      span {
+        @include btn-icon-style();
+
+        &::after {
+          background-image: url(/assets/images/home_arr2.png);
+        }
+      }
+    }
+  }
+
+  .loan-box-img {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    img {
+      width: 429px;
+      height: 563px;
+    }
   }
 }
 

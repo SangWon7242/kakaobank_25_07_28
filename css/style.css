@@ -12,7 +12,6 @@ html {
 html > body {
   font-family: "GmarketSansMedium";
   text-underline-position: under;
-  padding-bottom: 1000px; /* 임시 */
 }
 
 :root {
@@ -449,8 +448,8 @@ html > body {
 }
 .loan-box .sky .moon {
   position: absolute;
-  top: 200px;
-  left: calc(50% + 338px);
+  top: 155px;
+  left: calc(50% + 460px);
   width: 112px;
   height: 112px;
   overflow: hidden;
@@ -518,7 +517,53 @@ html > body {
 }
 .loan-box .con {
   position: relative;
+  height: 100%;
   z-index: 1;
+}
+.loan-box .loan-box-btns a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f6f6f6;
+  width: 166px;
+  height: 56px;
+  font-size: 16px;
+  color: #333;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.09);
+  color: #fff;
+}
+.loan-box .loan-box-btns a:hover span {
+  text-decoration: underline;
+}
+.loan-box .loan-box-btns a span {
+  display: flex;
+  align-items: center;
+  gap: 0 7px;
+}
+.loan-box .loan-box-btns a span::after {
+  content: "";
+  display: inline-block;
+  background-image: url(/assets/images/home_arr.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 10px;
+  height: 10px;
+  transform: translateY(-1px);
+}
+.loan-box .loan-box-btns a span::after {
+  background-image: url(/assets/images/home_arr2.png);
+}
+.loan-box .loan-box-img {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.loan-box .loan-box-img img {
+  width: 429px;
+  height: 563px;
 }
 
 @keyframes clittering {
