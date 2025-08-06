@@ -581,3 +581,39 @@ html > body {
   }
 }
 /* 대출 박스 구현 끝 */
+/* 체크카드 박스 구현 시작 */
+.checkcard-box-btn a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f6f6f6;
+  width: 258px;
+  height: 56px;
+  font-size: 16px;
+  color: #333;
+  border-radius: 10px;
+}
+.checkcard-box-btn a:hover span {
+  text-decoration: underline;
+}
+.checkcard-box-btn a span {
+  display: flex;
+  align-items: center;
+  gap: 0 7px;
+}
+.checkcard-box-btn a span::after {
+  content: "";
+  display: inline-block;
+  background-image: url(/assets/images/home_arr.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 10px;
+  height: 10px;
+  transform: translateY(-1px);
+}
+.checkcard-box-btn a span::after {
+  background-image: url(/assets/images/home_arr.png);
+}
+
+/* 체크카드 박스 구현 끝 */

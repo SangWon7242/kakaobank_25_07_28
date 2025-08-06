@@ -727,5 +727,28 @@ $site-width: 1080px;
     transform: scale(0.5);
   }
 }
-
 /* 대출 박스 구현 끝 */
+
+/* 체크카드 박스 구현 시작 */
+.checkcard-box {
+  &-btn {
+    a {
+      @include section-cont-btn(258px);
+
+      &:hover {
+        span {
+          text-decoration: underline;
+        }
+      }
+
+      span {
+        @include btn-icon-style();
+
+        &::after {
+          background-image: url(/assets/images/home_arr.png);
+        }
+      }
+    }
+  }
+}
+/* 체크카드 박스 구현 끝 */
