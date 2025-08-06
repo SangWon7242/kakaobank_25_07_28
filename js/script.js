@@ -1,15 +1,35 @@
 console.clear();
 
-// $('') : 검색
-$(".related-btn").click(function () {
-  let has = $(".related-btn-wrap").hasClass("active"); // 참 or 거짓
+function relatedBtnToggleAction() {
+  $(".related-btn").click(function () {
+    let has = $(".related-btn-wrap").hasClass("active"); // 참 or 거짓
 
-  if (has) {
-    $(".related-btn-wrap").removeClass("active");
-  } else {
-    $(".related-btn-wrap").addClass("active");
-  }
-});
+    if (has) {
+      $(".related-btn-wrap").removeClass("active");
+    } else {
+      $(".related-btn-wrap").addClass("active");
+    }
+  });
+}
+
+relatedBtnToggleAction();
+
+function chckcardBoxSwiper() {
+  const swiper = new Swiper("#checkcard-swiper-container .swiper", {
+    // 루프 모드 활성화
+    loop: true,
+    // 한 화면에 보여질 슬라이드 수
+    slidesPerView: 3,
+    centeredSlides: true,
+    // Navigation arrows
+    navigation: {
+      nextEl: ".checkcard-box .swiper-button-next",
+      prevEl: ".checkcard-box .swiper-button-prev",
+    },
+  });
+}
+
+chckcardBoxSwiper(); // 함수 실행
 
 /* 발견되면 활성화시키는 라이브러리 시작 */
 function ActiveOnVisible__init() {

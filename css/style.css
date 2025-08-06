@@ -616,4 +616,39 @@ html > body {
   background-image: url(/assets/images/home_arr.png);
 }
 
+#checkcard-swiper-container {
+  height: 475px;
+  position: relative;
+}
+#checkcard-swiper-container .swiper {
+  width: 660px;
+  height: 100%;
+}
+#checkcard-swiper-container .swiper-slide {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.5s;
+}
+#checkcard-swiper-container .swiper-slide.swiper-slide-active {
+  transform: scale(1.1);
+  z-index: 10;
+}
+#checkcard-swiper-container .swiper-button {
+  transform: translateY(-50%) !important;
+}
+#checkcard-swiper-container .swiper-button:hover::after {
+  opacity: 1;
+}
+#checkcard-swiper-container .swiper-button::after {
+  opacity: 0.75;
+}
+#checkcard-swiper-container .swiper-button-prev::after {
+  content: url(https://www.kakaobank.com/static/images/web/img-left.png);
+}
+#checkcard-swiper-container .swiper-button-next::after {
+  content: url(https://www.kakaobank.com/static/images/web/img-right.png);
+}
+
 /* 체크카드 박스 구현 끝 */
