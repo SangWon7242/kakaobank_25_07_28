@@ -76,7 +76,7 @@ $site-width: 1080px;
         top: 50%;
         transform: translateY(-50%) rotate(0);
         right: 10%;
-        background-image: url(/assets/images/svg_line_arrow_down.svg);
+        background-image: url(../assets/images/svg_line_arrow_down.svg);
         background-repeat: no-repeat;
         background-position: center;
         display: inline-block;
@@ -107,7 +107,7 @@ $site-width: 1080px;
       display: inline-block;
       width: 20px;
       height: 20px;
-      background-image: url(/assets/images/icon_eng.svg);
+      background-image: url(../assets/images/icon_eng.svg);
       background-position: center;
       background-size: 20px 20px;
     }
@@ -250,7 +250,7 @@ $site-width: 1080px;
     position: relative;
     max-width: 1200px;
     height: 884px;
-    background-image: url(/assets/images/main-bg3.png);
+    background-image: url(../assets/images/main-bg3.png);
     background-size: contain;
     background-repeat: no-repeat;
     z-index: 1;
@@ -279,7 +279,7 @@ $site-width: 1080px;
     @mixin list-store-icon($x: -341px, $y: -292px) {
       content: "";
       display: inline-block;
-      background-image: url(/assets/images/img_kabang_220615.png);
+      background-image: url(../assets/images/img_kabang_220615.png);
       background-repeat: no-repeat;
       width: 24px;
       height: 24px;
@@ -341,7 +341,7 @@ $site-width: 1080px;
   &::after {
     content: "";
     display: inline-block;
-    background-image: url(/assets/images/home_arr.png);
+    background-image: url(../assets/images/home_arr.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -692,7 +692,7 @@ $site-width: 1080px;
         @include btn-icon-style();
 
         &::after {
-          background-image: url(/assets/images/home_arr2.png);
+          background-image: url(../assets/images/home_arr2.png);
         }
       }
     }
@@ -745,7 +745,7 @@ $site-width: 1080px;
         @include btn-icon-style();
 
         &::after {
-          background-image: url(/assets/images/home_arr.png);
+          background-image: url(../assets/images/home_arr.png);
         }
       }
     }

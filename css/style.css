@@ -67,7 +67,7 @@ html > body {
   top: 50%;
   transform: translateY(-50%) rotate(0);
   right: 10%;
-  background-image: url(/assets/images/svg_line_arrow_down.svg);
+  background-image: url(../assets/images/svg_line_arrow_down.svg);
   background-repeat: no-repeat;
   background-position: center;
   display: inline-block;
@@ -91,7 +91,7 @@ html > body {
   display: inline-block;
   width: 20px;
   height: 20px;
-  background-image: url(/assets/images/icon_eng.svg);
+  background-image: url(../assets/images/icon_eng.svg);
   background-position: center;
   background-size: 20px 20px;
 }
@@ -204,7 +204,7 @@ html > body {
   position: relative;
   max-width: 1200px;
   height: 884px;
-  background-image: url(/assets/images/main-bg3.png);
+  background-image: url(../assets/images/main-bg3.png);
   background-size: contain;
   background-repeat: no-repeat;
   z-index: 1;
@@ -242,7 +242,7 @@ html > body {
 #main-banner .banner-intro .list-store a span::before {
   content: "";
   display: inline-block;
-  background-image: url(/assets/images/img_kabang_220615.png);
+  background-image: url(../assets/images/img_kabang_220615.png);
   background-repeat: no-repeat;
   width: 24px;
   height: 24px;
@@ -252,7 +252,7 @@ html > body {
 #main-banner .banner-intro .list-store li:last-child span::before {
   content: "";
   display: inline-block;
-  background-image: url(/assets/images/img_kabang_220615.png);
+  background-image: url(../assets/images/img_kabang_220615.png);
   background-repeat: no-repeat;
   width: 24px;
   height: 24px;
@@ -324,7 +324,7 @@ html > body {
 .section .text-box .cont-btn span::after {
   content: "";
   display: inline-block;
-  background-image: url(/assets/images/home_arr.png);
+  background-image: url(../assets/images/home_arr.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -544,7 +544,7 @@ html > body {
 .loan-box .loan-box-btns a span::after {
   content: "";
   display: inline-block;
-  background-image: url(/assets/images/home_arr.png);
+  background-image: url(../assets/images/home_arr.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -553,7 +553,7 @@ html > body {
   transform: translateY(-1px);
 }
 .loan-box .loan-box-btns a span::after {
-  background-image: url(/assets/images/home_arr2.png);
+  background-image: url(../assets/images/home_arr2.png);
 }
 .loan-box .loan-box-img {
   position: absolute;
@@ -604,7 +604,7 @@ html > body {
 .checkcard-box-btn a span::after {
   content: "";
   display: inline-block;
-  background-image: url(/assets/images/home_arr.png);
+  background-image: url(../assets/images/home_arr.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -613,7 +613,7 @@ html > body {
   transform: translateY(-1px);
 }
 .checkcard-box-btn a span::after {
-  background-image: url(/assets/images/home_arr.png);
+  background-image: url(../assets/images/home_arr.png);
 }
 
 #checkcard-swiper-container {
